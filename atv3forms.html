@@ -58,10 +58,46 @@
                     <input type="radio" value="noite" name="periodo_escolha">
                     <label for="noite">Noite</label>
                 </div>
-                <div>
+                <div><br>
                     <legend style="color: green;"><b>Conhecimentos Prévios</b></legend>
                 </div>
-                <label for=""></label>
+                <div>
+                    <input type="checkbox" name="conhecimentos[]">
+                    <label>HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="conhecimentos[]">
+                    <label>JavaScript</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="conhecimentos[]">
+                    <label>Banco de Dados</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="conhecimentos[]">
+                    <label>Nenhum conhecimento</label>
+                </div><br>
+                <div>
+                    <legend style="color: green;"><b>Avaliação Inicial</b></legend>
+                </div>
+                <input type="range" min="0" max="10" value="5">
+                <br><br>
+                <div>
+                    <legend style="color: green;"><b>Documentos</b></legend>
+                </div>
+                <div>
+                <label for="docs"><b>Enviar documentos:</b></label><br>
+                <input type="file">
+                </div><br>
+                <div>
+                    <legend style="color: green;"><b>Termos</b></legend>
+                </div>
+                <input type="checkbox">
+                <label><b>Li e aceito os termos da matrícula.</b></label>
+                <div>
+                    <button type="submit"><b>Enviar Matrícula</b></button>
+                    <button type="reset"><b>Limpar</b></button>
+                </div>
             
         </form>
     </body>
