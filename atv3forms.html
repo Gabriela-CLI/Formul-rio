@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade 03 - Formulários</title>
+    </head>
+    <body>
+        <h1 style="color: green; text-align: center;">SENAC</h1>
+        <h2 style="text-align: center;">Formulário de Pré-Matricula</h2>
+        <hr>
+        <form>
+            
+                <legend style="color: green;"><b>Dados do Aluno</b></legend><br>
+                <div>
+                    <label for="nome"><b>Nome completo:</b></label>
+                    <br>
+                    <input type="text" name="nome" required>
+                </div><br>
+                <div>
+                    <label for="email"><b>Email:</b></label>
+                    <br>
+                    <input type="email" name="email" required>
+                </div><br>
+                <div>
+                    <label for="telefone"><b>Telefone:</b></label>
+                    <br>
+                    <input type="number" placeholder="(xx)xxxxx-xxxx">
+                </div><br>
+                <div>
+                    <label for="nascimento"><b>Data de nascimento:</b></label><br>
+                    <input type="date" required>
+                </div><br>
+                <div>
+                    <label for="cor_fav"><b>Cor favorita:</b></label><br>
+                    <input type="color" name="cor_fav" value="#000000">
+                </div><br><br>
+               <div>
+                <legend style="color: green;"><b>Curso</b></legend>
+                </div>
+                <div>
+                    <label for="escolha_curso"><b>Escolha o curso:</b></label><br>
+                    <input list="escolha_curso">
+                    <datalist id="escolha_curso">
+                        <option value="Informática"></option>
+                    </datalist>
+                </div><br><br>
+               
+                    <label for="periodo"><b>Período:</b></label>
+                     <div>
+                    <input type="radio" value="manha" name="periodo_escolha">
+                    <label for="manha">Manhã</label>
+                </div>
+                <div>
+                    <input type="radio" value="tarde" name="periodo_escolha">
+                    <label for="tarde">Tarde</label>
+                </div>
+                <div>
+                    <input type="radio" value="noite" name="periodo_escolha">
+                    <label for="noite">Noite</label>
+                </div>
+                <div>
+                    <legend style="color: green;"><b>Conhecimentos Prévios</b></legend>
+                </div>
+                <label for=""></label>
+            
+        </form>
+    </body>
+</html>
