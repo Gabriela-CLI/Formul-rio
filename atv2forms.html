@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade 2 - Formulário</title>
+    </head>
+    <body>
+        <h1>Inscrição - Evento Gamer</h1>
+        <form>
+            <fieldset>
+                
+                <legend>Dados do Participante</legend>
+                <div>
+                <label for="nome">Nome:</label>
+                <input type="text" for="nome" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" for="email" required>
+                </div>
+                <div>
+                    <label for="nickname">Nickname:</label>
+                    <input type="text" for="nickname" required>
+                </div>
+                <div>
+                    <label for="nascimento">Data de nascimento</label>
+                    <input type="date">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Preferências</legend>
+                
+                    <label for="tipos">Tipos de jogos favoritos:</label>
+                <div>
+                    <input type="checkbox" name="tipos []">
+                    <label>FPS</label>
+                </div>
+                 <div>
+                    <input type="checkbox" name="tipos []">
+                    <label>RPG</label>
+                </div>
+                 <div>
+                    <input type="checkbox" name="tipos []">
+                    <label>Esportes</label>
+                </div>
+                 <div>
+                    <input type="checkbox" name="tipos []">
+                    <label>Estratégia</label>
+                </div>
+                <div>
+                    <label for="nivel_jogador">Nível de jogador (0 a 10)</label>
+                    <input type="range" min="0" max="10" value="5">
+                </div>
+                <div>
+                    <label for="favorito">Jogo favorito:</label>
+                    <input type="text">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Extras</legend>
+                <div>
+                    <label for="print">Enviar print do jogo:</label>
+                    <input type="file">
+                </div>
+                <label for="observacoes">Observações:</label>
+                <textarea name="observacoes" id="observacoes" rows="5"></textarea>
+            </fieldset>
+            <button type="submit">Enviar Inscrição</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </body>
+</html>

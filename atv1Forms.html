@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Atividade 1 - Formulário</title>
+    </head>
+    <body>
+        <h1>Workshop de Programação</h1>
+        <p>Preencha o formulário abaixo para se cadastrar:</p>
+        <form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <div>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" for="nome" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="text" for="email" required>
+                </div>
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number">
+                </div>
+                <div>
+                    <label for="data">Data da inscrição:</label>
+                    <input type="date">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Curso desejado</legend>
+                <label for="curso">Escolha um dos cursos abaixo:</label>
+                <div>
+                <input type="radio" name="curso_desejado">
+                <label for="frontend">Front-end</label>
+                </div>
+                <div>
+                <input type="radio" name="curso_desejado">
+                <label for="backend">Back-end</label>
+                </div>
+                <div>
+                <input type="radio" name="curso_desejado">
+                <label for="mobile">Mobile</label>
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit">Garanta sua vaga</button>
+                <button type="reset">Limpar formulário</button>
+            </div>
+        </form>
+    </body>
+</html>

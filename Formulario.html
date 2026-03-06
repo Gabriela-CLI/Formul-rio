@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Inscrição para TECSENAC 2026</h1>
+    <p>Preencha o formulário abaixo para garantir sua vaga no maior evento de tecnologia do ano! </p>
+    <form>
+        <fieldset>
+            <legend>Informações pessoais</legend>
+            <div>
+                <Label for="nome" >Nome Completo:</Label>
+                <input type="text" for="nome" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" required>
+            </div>
+            <div>
+                <label for="telefone">Telefone</label>
+                <input type="number" placeholder="(xx)xxxxx-xxxx">
+            </div>
+            <div>
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date">
+            </div>
+ 
+ 
+        </fieldset>
+        <legend>Preferencias do Evento</legend>
+
+        <fieldset>
+            <div>
+                <label for="tipo">Tipo de Inscrição (escolha uma)</label>
+                <div>
+                <input type="radio" value="estudante" name="tipo_inscricao">
+                <label for="estudante">Estudante</label>
+                </div>
+                <div>
+                <input type="radio" value="profissional" name="tipo_inscricao">
+                <label for="profissional">Profissional</label>
+                </div>
+                <div>
+                <input type="radio" value="aposentado" name="tipo_inscricao">
+                <label for="aposentado">Aposentado</label>
+                </div>
+                <label for="interesses">Áreas de Interesses (pode marcar várias opções)</label>
+                <div>
+                    <input type="checkbox" name="interesses[]">
+                    <label>Desenvolvimento Web</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interesses[]">
+                    <label>Ciências de Dados</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="interesses[]">
+                    <label>Inteligencia Artificial</label>
+                </div>
+                <div>
+                    <label for="nivel_experiencia">Seu nível de experiência (0 até 10)</label>
+                    <input type="range" min="0" max="10" value="5">
+                </div>
+                <div>
+                    <label for="palestra">Qual a palestra te interessa?</label>
+                    <input list="sugestoes_palestras">
+                    <datalist id="sugestoes_palestras">
+                        <option value="O futuro do React"></option>
+                        <option value="Machine Learning na prática"></option>
+                        <option value="Design System com figma"></option>
+                    </datalist>
+                </div>
+            </div>
+        
+
+        </fieldset>
+        <fieldset>
+            <legend>Extras</legend>
+            <div>
+                <label for="cor_cracha">Cor preferida para o seu crachá:</label>
+                    <input type="color" name="cor_cracha" value="#4a69bd">
+                    <div>
+                        <label for="comprovante">Anexar comprovante de estudante (opcional):</label>
+                        <input type="file">
+                    </div>
+                    <label for="observacoes">Observações:</label>
+                        <textarea name="observacoes" id="observacoes" rows="5"></textarea>
+            </div>
+        </fieldset>
+        <div>
+            <button type="submit">Garanta sua vaga</button>
+            <button type="reset">Limpar formulário</button>
+        </div>
+    </form>
+</body>
+</html>
+ 
